@@ -50,7 +50,7 @@ platform :ios do
       xcodeproj: "#{GITHUB_WORKSPACE}/LoopFollow.xcodeproj",
       build_number: current_build_number
     )      
-    
+    match_nuke(type: "distribution")
     match(
       type: "appstore",
 	readonly: false,
